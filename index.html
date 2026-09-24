@@ -1,118 +1,161 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ulaş Kamacı</title>
+    <meta name="description" content="Ulaş Kamacı: machine learning researcher working on diffusion models, generative modeling, and computational imaging. PhD defended July 2026, University of Illinois Urbana-Champaign.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-<html>
+<body>
+<main>
 
-    <head>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
-        <meta name="viewport" content="width=device-width">
-    </head>
+    <header class="intro">
+        <img class="portrait" src="photo.jpg" alt="Portrait of Ulaş Kamacı" width="640" height="640">
+        <div>
+            <h1>Ulaş Kamacı</h1>
+            <p class="tagline">Generative Models and Computational Imaging · PhD, UIUC</p>
+            <nav class="links">
+                <a href="mailto:kamaci.ulas@gmail.com">Email</a>
+                <a href="ulas_kamaci_resume.pdf">Resume</a>
+                <a href="https://scholar.google.com/citations?user=XcKvmewAAAAJ&amp;hl=en">Google Scholar</a>
+                <a href="https://github.com/ukamaci">GitHub</a>
+                <a href="https://www.linkedin.com/in/ulas-kamaci/">LinkedIn</a>
+            </nav>
+        </div>
+    </header>
 
-    <body>
-        <main>
+    <section>
+        <h2>About</h2>
+        <p>
+            I defended my PhD in Electrical and Computer Engineering at the
+            University of Illinois Urbana-Champaign in July 2026, advised by
+            Prof. Farzad Kamalabadi in the Coordinated Science Laboratory.
+            My thesis develops learned reconstruction and uncertainty
+            quantification methods for spectral imaging, using diffusion models
+            and posterior sampling.
+        </p>
+        <p>
+            I also built the CNN artifact-removal pipeline and the data-quality
+            flags used in the operational science pipeline of NASA's ICON mission.
+            Before Illinois, I received my BS in Electrical and Electronics
+            Engineering from Middle East Technical University in 2017.
+        </p>
+        <p>
+            I am interested in generative models, computer vision, and inverse
+            problems, and in taking these methods from research to real-world
+            applications.
+        </p>
+    </section>
 
-            <h1 id="title">Ulaş Kamacı</h1><br>
+    <section>
+        <h2>Research</h2>
+        <ul class="topics">
+            <li>
+                <h3>Diffusion models for inverse problems</h3>
+                <p>Diffusion posterior sampling for a nonlinear spectral imaging problem, with one unsupervised prior reused across measurement configurations.</p>
+            </li>
+            <li>
+                <h3>Uncertainty quantification</h3>
+                <p>Deep ensembles of conditional diffusion models that produce calibrated per-pixel error bars.</p>
+            </li>
+            <li>
+                <h3>Learned reconstruction</h3>
+                <p>A deep learning solver for solar slitless spectroscopy that halves velocity error relative to the classical solver and runs 60x faster.</p>
+            </li>
+            <li>
+                <h3>Space instruments</h3>
+                <p>Artifact removal and data-quality assessment for NASA ICON, and measurement design for diffractive and multi-frame satellite imaging.</p>
+            </li>
+        </ul>
+    </section>
 
-            <!-- ----- Sidebar ----- -->
-
-            <div id="sidebar">
-                <img src="kamo.JPG">
-                <p><b>Email: </b>ukamaci2@illinois.edu</p>
-                <p><a href="ulas_kamaci_resume.pdf">Resume</a></p>
-                <p><a href="https://scholar.google.com/citations?user=XcKvmewAAAAJ&hl=en&oi=ao">Google Scholar</a></p>
-                <p><a href="https://www.linkedin.com/in/ulas-kamaci/">LinkedIn</a></p>
-                <p><a href="https://github.com/ukamaci/">GitHub</a></p>
-            </div>
-
-            <!-- ----- Main Content ----- -->
-
-            <div id="main">
-                <h2>Education</h2>
-                <ul>
-                    <li>PhD Electrical and Computer Eng (2017 - present), <b>University of Illinois Urbana-Champaign</b>
-                    <li>BSc Electrical and Electronics Eng (2012-2017), <b>Middle East Technical University</b> <br> </li>
-                </ul>
-                <hr>
-                <h2>Research</h2>
-                Computational imaging, inverse problems and machine learning.
-                <hr>
-                <!-- <h2>Publications</h2>
-                <ul>
-                    <li>
-                        <b>J Widloski</b>, D Foster. Flexible rerouting of hippocampal replay sequences around changing barriers in the absence of global place field remapping. <i><b>Neuron</b></i>, 110 (2022).
-                        <a href="https://www.cell.com/neuron/fulltext/S0896-6273(22)00109-X?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS089662732200109X%3Fshowall%3Dtrue">[link]</a>
-                        <a href="Widloski2022.pdf">[pdf]</a>
-                        <br>
-                        <i><b>Commentaries:</b></i> 
-                        J Epsztein (<i><b>Nature</b></i>) <a href="https://www.nature.com/articles/d41586-022-01035-0">[link]</a> <a href="Widloski2022_newsAndViews.pdf">[pdf]</a>,
-                        BL McNaughton, R Saxena (<i><b>Neuron</b></i>) <a href="https://www.cell.com/neuron/fulltext/S0896-6273(22)00360-9?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627322003609%3Fshowall%3Dtrue">[link]</a> <a href="Widloski2022_preview.pdf">[pdf]</a>  
-                    </li>
-                    <li>
-                        <b>J Widloski</b>, MP Marder, IR Fiete. Inferring circuit mechanisms from sparse neural recording and global perturbation in grid cells. <i><b>eLife</b></i>, 7, e33503 (2018).
-                        <a href="https://elifesciences.org/articles/33503">[link]</a>
-                        <a href="Widloski_eLife2018.pdf">[pdf]</a> 
-                    </li>
-                    <li>
-                        <b>J Widloski</b>, IR Fiete. A model of grid cell development through spatial exploration and spike time-dependent plasticity. <i><b>Neuron</b></i>, 83 (2), 481-495 (2014).
-                        <a href="http://www.cell.com/neuron/abstract/S0896-6273(14)00540-6">[link]</a>
-                        <a href="http://clm.utexas.edu/fietelab/Papers/Widloski_development_2014.pdf">[pdf]</a>
-                    </li>
-                    <li>
-                        DL Vainchtein, <b>J Widloski</b>, RO Grigoriev. Resonant mixing in perturbed action-action-angle flow. <i><b>Physical Review E</b></i>, 78 (2), 026302 (2008).
-                        <a href="http://cns.physics.gatech.edu/~roman/pdf/pre_08.pdf">[pdf]</a> 
-                    </li>
-                    <li>
-                        DL Vainchtein, <b>J Widloski</b>, RO Grigoriev. Resonant chaotic mixing in a cellular flow. <i><b>Phys. Rev. Letters</b></i>, 99 (9), 094501 (2007).
-                        <a href="http://cns.physics.gatech.edu/~roman/pdf/prl_07.pdf">[pdf]</a> 
-                    </li>
-                    <li>
-                        DL Vainchtein, <b>J Widloski</b>, RO Grigoriev. Mixing properties of steady flow in thermocapillary driven droplets. <i><b>Physics of Fluids</b></i>, 19 (6), 067102 (2007).
-                        <a href="http://cns.physics.gatech.edu/~roman/pdf/pfl_07.pdf">[pdf]</a> 
-                    </li>
-                </ul> -->
+    <section>
+        <h2>Publications</h2>
+        <ol class="pubs">
+            <li>
+                <span class="year">2026</span>
                 <div>
-                    <h2>Publications</h2>
-                    <ul>
-                      <li>
-                        <strong>Ulas Kamaci</strong> and Farzad Kamalabadi. 
-                        <em>"Diffusion Posterior Sampling for Slitless Spectral Imaging."</em> 
-                        submitted to 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2026.
-                      </li>
-                      <li>
-                        <strong>Ulas Kamaci</strong> and Farzad Kamalabadi. 
-                        <em>"Posterior Sampling for Solar Snapshot Spectroscopy with Score-Based Priors."</em> 
-                        Proceedings of the International BASP Frontiers Workshop, 2025.
-                      </li>
-                      <li>
-                        <strong>Ulas Kamaci</strong> and Farzad Kamalabadi. 
-                        <em>"Solar Slitless Spectroscopy with Learned Reconstruction."</em> 
-                        under revision for the Astrophysical Journal.
-                      </li>
-                      <li>
-                        <strong>Ulas Kamaci</strong> and Farzad Kamalabadi. 
-                        <em>"Instantaneous Spectral Imaging with Learned Reconstruction."</em> 
-                        Proceedings of the International BASP Frontiers Workshop, 2023.
-                      </li>
-                      <li>
-                        <strong>Ulas Kamaci</strong>, et al. 
-                        <em>"Efficient sparsity-based inversion for photon-sieve spectral imagers with transform learning."</em> 
-                        2017 IEEE Global Conference on Signal and Information Processing (GlobalSIP). IEEE, 2017.
-                      </li>
-                      <li>
-                        Evan Widloski, <strong>Ulas Kamaci</strong>, and Farzad Kamalabadi. 
-                        <em>"Optimal measurement configuration in computational diffractive imaging."</em> 
-                        2020 IEEE International Conference on Image Processing (ICIP). IEEE, 2020.
-                      </li>
-                      <li>
-                        Oguzhan F. Kar, <strong>Ulas Kamaci</strong>, Fatih C. Akyon, and Figen S. Oktem. 
-                        <em>"Compressive photon-sieve spectral imaging."</em> 
-                        In Computational Optical Sensing and Imaging, pp. CTu5D-8. Optica Publishing Group, 2018.
-                      </li>
-                    </ul>
-                  </div>
+                    <p class="title">Diffusion Posterior Sampling for Slitless Spectral Imaging</p>
+                    <p class="authors"><b>U. Kamaci</b>, F. Kamalabadi</p>
+                    <p class="venue">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2026</p>
+                    <p class="extra"><a href="https://ieeexplore.ieee.org/document/11464969">Paper</a> · <a href="kamaci_icassp2026.pdf">PDF</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="year">2026</span>
+                <div>
+                    <p class="title">Solar Slitless Spectroscopy with Learned Reconstruction</p>
+                    <p class="authors"><b>U. Kamaci</b>, F. Kamalabadi</p>
+                    <p class="venue">The Astrophysical Journal, 2026</p>
+                    <p class="extra"><a href="https://doi.org/10.3847/1538-4357/ae7c6c">Paper</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="year">2025</span>
+                <div>
+                    <p class="title">Posterior Sampling for Solar Snapshot Spectroscopy with Score-Based Priors</p>
+                    <p class="authors"><b>U. Kamaci</b>, F. Kamalabadi</p>
+                    <p class="venue">International BASP Frontiers Workshop, 2025</p>
+                    <p class="extra"><a href="basp2025_poster_ulas_kamaci.pdf">Poster</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="year">2023</span>
+                <div>
+                    <p class="title">Instantaneous Spectral Imaging with Learned Reconstruction</p>
+                    <p class="authors"><b>U. Kamaci</b>, F. Kamalabadi</p>
+                    <p class="venue">International BASP Frontiers Workshop, 2023</p>
+                    <p class="extra"><a href="basp2023_poster.pdf">Poster</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="year">2023</span>
+                <div>
+                    <p class="title">In Flight Performance of the Far Ultraviolet Instrument (FUV) on ICON</p>
+                    <p class="authors">H. U. Frey, S. B. Mende, R. R. Meier, <b>U. Kamaci</b>, J. M. Urco, F. Kamalabadi, S. L. England, T. J. Immel</p>
+                    <p class="venue">Space Science Reviews 219(3), 2023</p>
+                    <p class="extra"><a href="https://doi.org/10.1007/s11214-023-00969-9">Paper</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="year">2020</span>
+                <div>
+                    <p class="title">Optimal Measurement Configuration in Computational Diffractive Imaging</p>
+                    <p class="authors">E. Widloski, <b>U. Kamaci</b>, F. Kamalabadi</p>
+                    <p class="venue">IEEE International Conference on Image Processing (ICIP), 2020</p>
+                    <p class="extra"><a href="https://ieeexplore.ieee.org/document/9191355">Paper</a> · <a href="https://arxiv.org/abs/2005.11877">arXiv</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="year">2018</span>
+                <div>
+                    <p class="title">Compressive Photon-Sieve Spectral Imaging</p>
+                    <p class="authors">O. F. Kar, <b>U. Kamaci</b>, F. C. Akyon, F. S. Oktem</p>
+                    <p class="venue">Computational Optical Sensing and Imaging (COSI), Optica, 2018</p>
+                    <p class="extra"><a href="https://opg.optica.org/abstract.cfm?uri=COSI-2018-CTu5D.8">Paper</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="year">2017</span>
+                <div>
+                    <p class="title">Efficient Sparsity-Based Inversion for Photon-Sieve Spectral Imagers with Transform Learning</p>
+                    <p class="authors"><b>U. Kamaci</b>, et al.</p>
+                    <p class="venue">IEEE Global Conference on Signal and Information Processing (GlobalSIP), 2017</p>
+                    <p class="extra"><a href="https://ieeexplore.ieee.org/document/8309156">Paper</a></p>
+                </div>
+            </li>
+        </ol>
+    </section>
 
-            </div>
+    <footer>
+        <p>Last updated September 2026</p>
+    </footer>
 
-        </main>
-    </body>
-
+</main>
+</body>
 </html>
