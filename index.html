@@ -9,6 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ukamaci.github.io/">
+    <meta property="og:title" content="Ulaş Kamacı">
+    <meta property="og:description" content="Generative models and computational imaging. PhD, University of Illinois Urbana-Champaign.">
+    <meta property="og:image" content="https://ukamaci.github.io/og.jpg">
+    <meta name="twitter:card" content="summary">
 </head>
 
 <body>
@@ -96,7 +104,7 @@
                     <p class="title">Solar Slitless Spectroscopy with Learned Reconstruction</p>
                     <p class="authors"><b>U. Kamaci</b>, F. Kamalabadi</p>
                     <p class="venue">The Astrophysical Journal, 2026</p>
-                    <p class="extra"><a href="https://doi.org/10.3847/1538-4357/ae7c6c">Paper</a> · <button class="abs-toggle" aria-expanded="false" aria-controls="abs-apj2026">Abstract</button></p>
+                    <p class="extra"><a href="https://doi.org/10.3847/1538-4357/ae7c6c">Paper</a> · <a href="https://github.com/ukamaci/slitless-learned-recon">Code</a> · <button class="abs-toggle" aria-expanded="false" aria-controls="abs-apj2026">Abstract</button></p>
                     <p class="abstract" id="abs-apj2026" hidden>Although solar imaging spectroscopy has been widely used to study the Sun, the inherent rastering process in conventional slit spectrographs required to generate spatial-spectral images limits their capability for studying dynamic events. In contrast, slitless imaging spectrographs can enable cotemporal imaging and spectroscopy by removing the slit and the rastering process, at the expense of producing overlapped spectra on the observations, implying the necessity for the solution of the resulting inverse problem. In this work, we develop a deep learning approach to disentangle the overlapped spectra for a slitless spectrograph design with a narrow bandpass in extreme ultraviolet (EUV) and detectors placed at multiple orders. The bandpass is designed to isolate a dominant spectral line, and our method recovers its three Gaussian parameters (intensity, Doppler velocity, and line width) from the multiorder observations. We train a convolutional neural network as a mapping from the spectrograph observations to the spectral line parameters in a supervised manner, using a large dataset derived from Hinode EUV Imaging Spectrometer (EIS) observations. We compare the proposed method to a widely used tomographic reconstruction approach, MART, and a recently proposed parametric inversion approach. Experiments on various observational settings show that the proposed method substantially outperforms both baselines in intensity and velocity reconstruction (velocity errors reduced by more than a factor of 2 relative to the closest baseline), and is the only method to achieve meaningful line width recovery. Reconstruction is completed in under a second, orders of magnitude faster than the alternative methods.</p>
                 </div>
             </li>
