@@ -147,9 +147,10 @@ h3 {
 
 .pubs li {
     display: grid;
-    grid-template-columns: 56px 1fr;
-    gap: 12px;
-    padding: 14px 0;
+    grid-template-columns: 44px 160px 1fr;
+    gap: 16px;
+    align-items: start;
+    padding: 16px 0;
     border-bottom: 1px solid var(--rule);
 }
 .pubs li:last-child { border-bottom: none; }
@@ -162,6 +163,22 @@ h3 {
     font-variant-numeric: tabular-nums;
     padding-top: 2px;
 }
+
+.thumb {
+    display: block;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid var(--rule);
+    line-height: 0;
+}
+.thumb img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+.thumb:hover img { transform: scale(1.04); }
 
 .pubs .title { font-weight: 500; }
 
@@ -176,6 +193,37 @@ h3 {
 .pubs .extra {
     font-size: 0.875rem;
     margin-top: 4px;
+}
+
+.abs-toggle {
+    font: inherit;
+    color: var(--accent);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+.abs-toggle:hover { text-decoration: underline; }
+.abs-toggle::after {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-left: 6px;
+    border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor;
+    transform: translateY(-2px) rotate(45deg);
+    transition: transform 0.15s ease;
+}
+.abs-toggle[aria-expanded="true"]::after { transform: translateY(1px) rotate(-135deg); }
+
+.pubs .abstract {
+    margin-top: 10px;
+    padding-left: 12px;
+    border-left: 2px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.55;
 }
 
 footer {
@@ -199,5 +247,6 @@ footer {
 
     .topics { grid-template-columns: 1fr; }
 
-    .pubs li { grid-template-columns: 1fr; gap: 2px; }
+    .pubs li { grid-template-columns: 112px 1fr; gap: 6px 12px; }
+    .pubs .year { grid-column: 1 / -1; padding-top: 0; }
 }

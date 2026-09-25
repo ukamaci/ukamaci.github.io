@@ -18,7 +18,7 @@
         <img class="portrait" src="photo.jpg" alt="Portrait of Ulaş Kamacı" width="640" height="640">
         <div>
             <h1>Ulaş Kamacı</h1>
-            <p class="tagline">Generative Models and Computational Imaging · PhD, UIUC</p>
+            <p class="tagline">Generative Models and Computational Imaging<br>PhD, University of Illinois Urbana-Champaign</p>
             <nav class="links">
                 <a href="mailto:kamaci.ulas@gmail.com">Email</a>
                 <a href="ulas_kamaci_resume.pdf">Resume</a>
@@ -80,74 +80,90 @@
         <ol class="pubs">
             <li>
                 <span class="year">2026</span>
+                <a class="thumb" href="https://ieeexplore.ieee.org/document/11464969" tabindex="-1" aria-hidden="true"><img src="thumbs/icassp2026.jpg" alt="" width="480" height="360" loading="lazy"></a>
                 <div>
                     <p class="title">Diffusion Posterior Sampling for Slitless Spectral Imaging</p>
                     <p class="authors"><b>U. Kamaci</b>, F. Kamalabadi</p>
                     <p class="venue">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2026</p>
-                    <p class="extra"><a href="https://ieeexplore.ieee.org/document/11464969">Paper</a> · <a href="kamaci_icassp2026.pdf">PDF</a></p>
+                    <p class="extra"><a href="https://ieeexplore.ieee.org/document/11464969">Paper</a> · <a href="kamaci_icassp2026.pdf">PDF</a> · <button class="abs-toggle" aria-expanded="false" aria-controls="abs-icassp2026">Abstract</button></p>
+                    <p class="abstract" id="abs-icassp2026" hidden>Imaging spectroscopy is a fundamental technique for investigating various physical phenomena. Traditional imaging spectrographs require a time-consuming scanning process to construct the spatial-spectral data cube, rendering them unsuitable for dynamic scenes. Slitless spectrographs have been proposed as snapshot imagers; however, their measurements consist of overlapped spectra, requiring to solve a limited-angle tomography problem. The existing reconstruction approaches have limited accuracy due to the highly ill-posed nature of the problem. In this work, we adapt the diffusion posterior sampling (DPS) method which uses a trained diffusion model as a prior. Targeting applications where spectrum consists of discrete emissions, we use a Gaussian parametrization for the spectrum, and use DPS to solve the resulting nonlinear inverse problem to estimate the Gaussian line parameters at each spatial location. Effectiveness of the approach is demonstrated on a solar imaging application.</p>
                 </div>
             </li>
             <li>
                 <span class="year">2026</span>
+                <a class="thumb" href="https://doi.org/10.3847/1538-4357/ae7c6c" tabindex="-1" aria-hidden="true"><img src="thumbs/apj2026.jpg" alt="" width="480" height="360" loading="lazy"></a>
                 <div>
                     <p class="title">Solar Slitless Spectroscopy with Learned Reconstruction</p>
                     <p class="authors"><b>U. Kamaci</b>, F. Kamalabadi</p>
                     <p class="venue">The Astrophysical Journal, 2026</p>
-                    <p class="extra"><a href="https://doi.org/10.3847/1538-4357/ae7c6c">Paper</a></p>
+                    <p class="extra"><a href="https://doi.org/10.3847/1538-4357/ae7c6c">Paper</a> · <button class="abs-toggle" aria-expanded="false" aria-controls="abs-apj2026">Abstract</button></p>
+                    <p class="abstract" id="abs-apj2026" hidden>Although solar imaging spectroscopy has been widely used to study the Sun, the inherent rastering process in conventional slit spectrographs required to generate spatial-spectral images limits their capability for studying dynamic events. In contrast, slitless imaging spectrographs can enable cotemporal imaging and spectroscopy by removing the slit and the rastering process, at the expense of producing overlapped spectra on the observations, implying the necessity for the solution of the resulting inverse problem. In this work, we develop a deep learning approach to disentangle the overlapped spectra for a slitless spectrograph design with a narrow bandpass in extreme ultraviolet (EUV) and detectors placed at multiple orders. The bandpass is designed to isolate a dominant spectral line, and our method recovers its three Gaussian parameters (intensity, Doppler velocity, and line width) from the multiorder observations. We train a convolutional neural network as a mapping from the spectrograph observations to the spectral line parameters in a supervised manner, using a large dataset derived from Hinode EUV Imaging Spectrometer (EIS) observations. We compare the proposed method to a widely used tomographic reconstruction approach, MART, and a recently proposed parametric inversion approach. Experiments on various observational settings show that the proposed method substantially outperforms both baselines in intensity and velocity reconstruction (velocity errors reduced by more than a factor of 2 relative to the closest baseline), and is the only method to achieve meaningful line width recovery. Reconstruction is completed in under a second, orders of magnitude faster than the alternative methods.</p>
                 </div>
             </li>
             <li>
                 <span class="year">2025</span>
+                <a class="thumb" href="basp2025_poster_ulas_kamaci.pdf" tabindex="-1" aria-hidden="true"><img src="thumbs/basp2025.jpg" alt="" width="480" height="360" loading="lazy"></a>
                 <div>
                     <p class="title">Posterior Sampling for Solar Snapshot Spectroscopy with Score-Based Priors</p>
                     <p class="authors"><b>U. Kamaci</b>, F. Kamalabadi</p>
                     <p class="venue">International BASP Frontiers Workshop, 2025</p>
-                    <p class="extra"><a href="basp2025_poster_ulas_kamaci.pdf">Poster</a></p>
+                    <p class="extra"><a href="basp2025_poster_ulas_kamaci.pdf">Poster</a> · <button class="abs-toggle" aria-expanded="false" aria-controls="abs-basp2025">Abstract</button></p>
+                    <p class="abstract" id="abs-basp2025" hidden>Solar imaging spectroscopy is a fundamental technique for investigating the solar corona. Traditional imaging spectrographs require a time-consuming scanning process to build up the spatial-spectral data cube which renders them unsuitable to capture the quickly evolving transient events in the corona. Slitless spectrographs have been proposed to perform snapshot spectral imaging without requiring scanning; however, their measurements consist of overlapped spectra which needs to be disentangled to reconstruct the spatial spectral data cube. This configuration results in limited-angle tomography, which is a highly under-determined inverse problem. By using a Gaussian model for the spectra, we formulate the inverse problem as a parametric blur estimation problem with non-uniform blur where the goal is to estimate the parameters of the Gaussian blur at each spatial location, producing a nonlinear inverse problem. To solve the inverse problem we adapt a posterior sampling scheme with a score-based prior trained on Gaussian spectral fits of thousands of observations derived from the EIS spectrograph onboard the Hinode observatory. Comparison experiments with an end-to-end trained model demonstrate the effectiveness of the approach in terms of reconstruction quality and robustness against distribution shifts. As demonstrated in this work, such computational approaches to spectral imaging involving machine learning solutions to inverse problems show the promise of superior temporal and spatial resolution for observational astronomy.</p>
                 </div>
             </li>
             <li>
                 <span class="year">2023</span>
+                <a class="thumb" href="basp2023_poster.pdf" tabindex="-1" aria-hidden="true"><img src="thumbs/basp2023.jpg" alt="" width="480" height="360" loading="lazy"></a>
                 <div>
                     <p class="title">Instantaneous Spectral Imaging with Learned Reconstruction</p>
                     <p class="authors"><b>U. Kamaci</b>, F. Kamalabadi</p>
                     <p class="venue">International BASP Frontiers Workshop, 2023</p>
-                    <p class="extra"><a href="basp2023_poster.pdf">Poster</a></p>
+                    <p class="extra"><a href="basp2023_poster.pdf">Poster</a> · <button class="abs-toggle" aria-expanded="false" aria-controls="abs-basp2023">Abstract</button></p>
+                    <p class="abstract" id="abs-basp2023" hidden>Spectral imaging, simultaneous spectroscopy and photography of a scene, is a fundamental diagnostic technique in physical sciences. Due to the limitations of two dimensional detectors to capture the three dimensional spatio-spectral data, conventional spectral imagers require a scanning process via taking multiple exposures, which renders them unsuitable for dynamic scenes. A computational technique for non-scanning spectral imaging has been proposed and its effectiveness has been demonstrated in the context of spectral imaging of stellar coronae, where a nonlinear parametric forward model is developed, and the resulting semi-blind deblurring problem is solved to estimate the underlying unknown parameters from multiplexed measurements. However, the proposed algorithm is computationally expensive, and has limited performance in noisy settings. Nevertheless, the characteristics of the image formation model, in particular the non-linearity and non-convexity of the optimization problem, motivate a machine learning approach to the solution of the inverse problem as recently proposed for a related computational imaging modality. In this work, we develop a deep learning based approach to solve the ill-posed spectral image reconstruction problem based on a convolutional neural network using supervised learning with previous observational data. We analyze the effect of network architecture, training data, and loss function on the reconstruction performance, and evaluate the method on various observational settings.</p>
                 </div>
             </li>
             <li>
                 <span class="year">2023</span>
+                <a class="thumb" href="https://doi.org/10.1007/s11214-023-00969-9" tabindex="-1" aria-hidden="true"><img src="thumbs/icon2023.jpg" alt="" width="480" height="360" loading="lazy"></a>
                 <div>
                     <p class="title">In Flight Performance of the Far Ultraviolet Instrument (FUV) on ICON</p>
                     <p class="authors">H. U. Frey, S. B. Mende, R. R. Meier, <b>U. Kamaci</b>, J. M. Urco, F. Kamalabadi, S. L. England, T. J. Immel</p>
                     <p class="venue">Space Science Reviews 219(3), 2023</p>
-                    <p class="extra"><a href="https://doi.org/10.1007/s11214-023-00969-9">Paper</a></p>
+                    <p class="extra"><a href="https://doi.org/10.1007/s11214-023-00969-9">Paper</a> · <button class="abs-toggle" aria-expanded="false" aria-controls="abs-icon2023">Abstract</button></p>
+                    <p class="abstract" id="abs-icon2023" hidden>The NASA Ionospheric Connection Explorer (ICON) was launched in October 2019 and has been observing the upper atmosphere and ionosphere to understand the sources of their strong variability, to understand the energy and momentum transfer, and to determine how the solar wind and magnetospheric effects modify the internally-driven atmosphere-space system. The Far Ultraviolet Instrument (FUV) supports these goals by observing the ultraviolet airglow in day and night, determining the atmospheric and ionospheric composition and density distribution. Based on the combination of ground calibration and flight data, this paper describes how major instrument parameters have been verified or refined since launch, how science data are collected, and how the instrument has performed over the first 3 years of the science mission. It also provides a brief summary of science results obtained so far.</p>
                 </div>
             </li>
             <li>
                 <span class="year">2020</span>
+                <a class="thumb" href="https://ieeexplore.ieee.org/document/9191355" tabindex="-1" aria-hidden="true"><img src="thumbs/icip2020.jpg" alt="" width="480" height="360" loading="lazy"></a>
                 <div>
                     <p class="title">Optimal Measurement Configuration in Computational Diffractive Imaging</p>
                     <p class="authors">E. Widloski, <b>U. Kamaci</b>, F. Kamalabadi</p>
                     <p class="venue">IEEE International Conference on Image Processing (ICIP), 2020</p>
-                    <p class="extra"><a href="https://ieeexplore.ieee.org/document/9191355">Paper</a> · <a href="https://arxiv.org/abs/2005.11877">arXiv</a></p>
+                    <p class="extra"><a href="https://ieeexplore.ieee.org/document/9191355">Paper</a> · <a href="https://arxiv.org/abs/2005.11877">arXiv</a> · <button class="abs-toggle" aria-expanded="false" aria-controls="abs-icip2020">Abstract</button></p>
+                    <p class="abstract" id="abs-icip2020" hidden>Diffractive lenses have recently been applied to the domain of multispectral imaging in the X-ray and UV regimes where they can achieve very high resolution as compared to reflective and refractive optics. Conventionally, spectral components are reconstructed by taking measurements at the focal planes. However, the reconstruction quality can be improved by optimizing the measurement configuration. In this work, we adapt a sequential backward selection algorithm to search for a configuration which minimizes expected reconstruction error. By approximating the forward system as a circular convolution and making assumptions on the source and noise, we greatly reduce the complexity of the algorithm. Numerical results show that the configuration found by the algorithm significantly improves the reconstruction performance compared to a standard configuration.</p>
                 </div>
             </li>
             <li>
                 <span class="year">2018</span>
+                <a class="thumb" href="https://opg.optica.org/abstract.cfm?uri=COSI-2018-CTu5D.8" tabindex="-1" aria-hidden="true"><img src="thumbs/cosi2018.jpg" alt="" width="480" height="360" loading="lazy"></a>
                 <div>
                     <p class="title">Compressive Photon-Sieve Spectral Imaging</p>
                     <p class="authors">O. F. Kar, <b>U. Kamaci</b>, F. C. Akyon, F. S. Oktem</p>
                     <p class="venue">Computational Optical Sensing and Imaging (COSI), Optica, 2018</p>
-                    <p class="extra"><a href="https://opg.optica.org/abstract.cfm?uri=COSI-2018-CTu5D.8">Paper</a></p>
+                    <p class="extra"><a href="https://opg.optica.org/abstract.cfm?uri=COSI-2018-CTu5D.8">Paper</a> · <button class="abs-toggle" aria-expanded="false" aria-controls="abs-cosi2018">Abstract</button></p>
+                    <p class="abstract" id="abs-cosi2018" hidden>We develop a new compressive spectral imaging modality that utilizes a coded aperture and a photon-sieve for dispersion. The 3D spectral data cube is successfully reconstructed with as little as two shots using sparse recovery.</p>
                 </div>
             </li>
             <li>
                 <span class="year">2017</span>
+                <a class="thumb" href="https://ieeexplore.ieee.org/document/8309156" tabindex="-1" aria-hidden="true"><img src="thumbs/globalsip2017.jpg" alt="" width="480" height="360" loading="lazy"></a>
                 <div>
                     <p class="title">Efficient Sparsity-Based Inversion for Photon-Sieve Spectral Imagers with Transform Learning</p>
-                    <p class="authors"><b>U. Kamaci</b>, et al.</p>
+                    <p class="authors"><b>U. Kamaci</b>, F. C. Akyon, T. Alkanat, F. S. Oktem</p>
                     <p class="venue">IEEE Global Conference on Signal and Information Processing (GlobalSIP), 2017</p>
-                    <p class="extra"><a href="https://ieeexplore.ieee.org/document/8309156">Paper</a></p>
+                    <p class="extra"><a href="https://ieeexplore.ieee.org/document/8309156">Paper</a> · <button class="abs-toggle" aria-expanded="false" aria-controls="abs-globalsip2017">Abstract</button></p>
+                    <p class="abstract" id="abs-globalsip2017" hidden>We develop an efficient and adaptive sparse reconstruction approach for the recovery of spectral images from the measurements of a photon-sieve spectral imager (PSSI). PSSI is a computational imaging technique that enables higher resolution than conventional spectral imagers. Each measurement in PSSI is a superposition of the blurred spectral images; hence, the inverse problem can be viewed as a type of multiframe deconvolution problem involving multiple objects. The transform learning-based approach reconstructs the spectral images from these superimposed measurements while simultaneously learning a sparsifying transform. This is performed using a block coordinate descent algorithm with efficient update steps. The performance is illustrated for a variety of measurement settings in solar spectral imaging. Compared to approaches with fixed sparsifying transforms, the approach is capable of efficiently reconstructing spectral images with improved reconstruction quality.</p>
                 </div>
             </li>
         </ol>
@@ -158,5 +174,14 @@
     </footer>
 
 </main>
+<script>
+document.querySelectorAll('.abs-toggle').forEach(function (b) {
+    b.addEventListener('click', function () {
+        var open = b.getAttribute('aria-expanded') !== 'true';
+        b.setAttribute('aria-expanded', open);
+        document.getElementById(b.getAttribute('aria-controls')).hidden = !open;
+    });
+});
+</script>
 </body>
 </html>
